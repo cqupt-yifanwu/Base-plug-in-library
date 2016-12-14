@@ -41,7 +41,8 @@
 					html + = "<li>" + data[i].text + "</li>";
 				}
 				contentUl.innerHTML = html;
-			})
+				ctsList = contentUl.childNodes;
+			}) 
 		}*/
 
 		var ctsListChilds = ctsList.children;       	      // li元素集，保存到变量中，防止反复访问，提升性能
