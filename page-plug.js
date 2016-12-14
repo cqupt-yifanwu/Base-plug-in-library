@@ -8,7 +8,8 @@
 	*		ctsList: DOMObjects, // 含义：需要分页的总的内容的条数  注意：这里是数据确定的条件下需要的参数
 	*		prev: DOMobject, // 含义：上一页按钮
 	*		next: DOMobject, // 含义：下一页按钮
-	*		url: url // 含义：请求数据的地址（非必需）
+	*		url: url, // 含义：请求数据的地址（非必需）
+			contentUl: DOMobject // 含义：包含信息的容器-ul元素（当数据需要从服务端获取的时候需要此参数）
  	* }
 	*/
 
