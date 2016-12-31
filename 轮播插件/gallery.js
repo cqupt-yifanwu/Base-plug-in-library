@@ -46,12 +46,13 @@
 		// 	timer = setInterval(play,2000);
 		// });
 	  
-		$(oUl1).click(function(e){
-			clearInterval(timer);
-			a = $(e.target).parent().index() + 1;    // 最底层的是img  再往上一层就是li
-			changePic(a);      
-			timer = setInterval(play,2000);
-		})
+		$(oUl1)
+		// .click(function(e){
+		// 	clearInterval(timer);
+		// 	a = $(e.target).parent().index() + 1;    // 最底层的是img  再往上一层就是li
+		// 	changePic(a);      
+		// 	timer = setInterval(play,2000);
+		// })
 		.mouseover(function(e){                      //鼠标移入移除效果。
 			$(e.target).css('opacity', '0.5');
 		})
@@ -59,12 +60,15 @@
 			$(e.target).css('opacity', '1');
 		});
 })
-   var doc = document;
-var obj = {
-	"photos": doc.getElementById('photoUl').getElementsByTagName('img'),
-	"contImg": doc.getElementById('bigImg'),
-	"speed": 2000,
-	"leftBtn": doc.getElementById("left"),
-	"rightBtn" doc.getElementById("right")
-}
-carousel (obj);
+$(function() {
+	    var doc = document;
+		var obj = {
+			"photoCtn": doc.getElementById('photoUl'),
+			"contImg": doc.getElementById('bigImg'),
+			"speed": 2000,
+			"leftBtn": doc.getElementById("left"),
+			"rightBtn": doc.getElementById("right")
+		}
+		console.log(obj);
+		carousel (obj);
+})
