@@ -2,8 +2,8 @@
 
 ## 共有以下及部分组成
 
-### 分页插件 [http://music.163.com/#/song?id=450041299](http://music.163.com/#/song?id=450041299)
+### [https://github.com/cqupt-yifanwu/Base-plug-in-library/tree/master/%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6](分页插件) 
 
-### 轮播插件 [http://music.163.com/#/song?id=450041299](http://music.163.com/#/song?id=450041299)
+### 轮播插件 []()
 
 ### 持续更新中...
