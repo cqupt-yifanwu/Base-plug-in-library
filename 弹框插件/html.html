@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"> 
+	<title>cyptoguard</title>
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script charset="gb2312" type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<!-- 在需要弹出层的位置加上此段html，不要破坏原本的dom结构，另外要在head标签中引入jquery库文件，和本文件夹中的js，css文件，并且检查命名冲突 -->
+	
+	<div>
+		<a href="javascript: void(0)" id="clickMe">修改密码</a>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+		<p>这里有很多网页的内容...</p>
+	</div>
+	<div id="cyptoguard">
+		<div class="passwordProtect">
+			<div class="protectTop">
+				<span>修改密码</span>
+				<div class="protectClose"></div>
+			</div>
+			<fieldset class="protectContent">
+				<div>
+					<label for="questionChoose">请选择密保问题：</label>
+					<select name="questionChoose" id="questionChoose">
+						<option value="q1">您就读的高中班主任的名字？</option>
+						<option value="q2">您就读的高中叫什么名字？</option>
+						<option value="q3">您就读的初中叫什么名字？</option>
+					</select>
+				</div>
+				<div>
+					<label for="protectAnswer">请输入密保问题：</label>
+					<input type="text" id="protectAnswer" name="protectAnswer" />
+				</div>
+				<div>
+					<label for="oldPassword">输入你的旧密码：</label>
+					<input type="password" id="oldPassword" name="oldPassword" />
+				</div>
+				<div>
+					<label for="newPassword">输入你的新密码：</label>
+					<input type="password" id="newPassword" name="newPassword" />
+				</div>
+				<div>
+					<label for="reNewPassword">再次输入新密码：</label>
+					<input type="password" id="reNewPassword" name="reNewPassword" />
+				</div>
+			</fieldset>
+			<button id="passwordSubmit">提交</button>
+		</div>
+	</div>
+</body>
+</html>
+

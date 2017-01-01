@@ -2,8 +2,10 @@
 
 ## 共有以下及部分组成
 
-### [https://github.com/cqupt-yifanwu/Base-plug-in-library/tree/master/%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6](分页插件) 
+### [分页插件](https://github.com/cqupt-yifanwu/Base-plug-in-library/tree/master/分页插件) 
 
-### 轮播插件 []()
+### [轮播插件](https://github.com/cqupt-yifanwu/Base-plug-in-library/tree/master/轮播插件)
+
+### [弹框插件](https://github.com/cqupt-yifanwu/Base-plug-in-library/tree/master/弹框插件)
 
 ### 持续更新中...

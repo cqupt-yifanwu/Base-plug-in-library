@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#cyptoguard {           
+	z-index: 10;
+	position: fixed;
+	display: none;
+	top: 0px;
+	left: 0px;
+	text-align: center; 
+	width: 100%;
+	height: 100%; 
+	height: 100vh; 
+	background-color: rgba(0,0,0,.35);
+}
+#cyptoguard:before {              /* 利用css实现元素居中，兼容至ie8，若有需要可以使用js文件中的注释代码*/
+	content: '';
+    display: inline-block;    
+    height: 100%;
+    vertical-align: middle;
+}
+.passwordProtect {
+	z-index: 100;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	width: 430px;
+	height: 250px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	font-weight: 600;
+}
+ .passwordProtect .protectClose {
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	width: 17px;
+	height: 17px;
+	background: url(../img/panel_tools1.png) no-repeat -15px 1px;   /*这里引入的img是一个关闭图标，可以自行在网上下载并且调整其位置*/
+} 
+.passwordProtect .protectClose:after{
+	content: '\2718';
+}
+.passwordProtect .protectTop {
+	width: 100%;
+	height: 30px;
+	border-bottom: 2px solid #ddd;
+	line-height: 30px;
+}
+.passwordProtect .protectTop span {
+	font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+}
+.passwordProtect .protectContent {
+	/*width: 300px;*/
+	height: 60%;
+	margin: 10px 20px;
+	border: 1px solid #ddd;
+	padding: 5px 10px 10px 10px;
+	overflow: hidden;
+}
+.passwordProtect .protectContent div {
+	padding-top: 5px;
+}
+.passwordProtect #passwordSubmit {
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.passwordProtect input {
+	width: 193px;
+	height: 16px;
+	margin-top: 5px;
+}
