@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webStorage</title>
+</head>
+<body>
+	<p id="msg"></p>
+	<input type="text" id="input">
+	<input type="button" value="保存数据" onclick="saveStorage('input');">
+	<input type="button" value="读取数据" onclick="loadStorage('msg');">
+</body>
+<script type="text/javascript">
+/*  sessionStorage
+	sessionStorage.setItem('key', 'value');
+	  或者
+		sessionStorage.key = 'value'
+	
+	 读取数据的方法
+	var msg = sessionStorage.getItem('key');
+	 或者
+		msg = sessionStorage.key;
+	
+
+	localStorage
+	localStorage.setItem('key', 'value');
+	 localStorage.key = 'value';
+	 读取数据的方法
+	var msg = localStorage.getItem('key');
+	 msg = localStorage.key;
+*/
+
+	// sessionStorage
+	function saveStorage (id) {
+		var target = document.getElementById(id);
+		var str = target.value;
+		sessionStorage.setItem('message', str);
+		// 或者 sessionStorage.message = str;
+	}
+	function loadStorage (id) {
+		var target = document.getElementById(id);
+		var msg = sessionStorage.getItem('message');
+		// 或者 sessionStorage.message
+		target.innerHTML = msg;
+	}
+	//  localStorage 的用法和 sessionStorage 的一致，在此不再赘述
+</script>
+</html>

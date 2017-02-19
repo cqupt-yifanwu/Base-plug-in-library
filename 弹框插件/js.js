@@ -10,7 +10,7 @@ $(function(){
 
     //此demo中完全利用css控制元素居中，无法良好兼容ie，若考虑到兼容性可以启用这段代码
 	//固定表格位置
-	/*
+	
 	function center () {
 		var innerHeight = $(document).innerHeight(),
 			innerWidth = $(document).innerWidth();
@@ -23,7 +23,7 @@ $(function(){
 	};
 	center();
 	$(window).resize(center);
-	*/
+	
 	
 
 	//弹出修改密码框

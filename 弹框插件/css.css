@@ -4,22 +4,14 @@ body {
 }
 #cyptoguard {           
 	z-index: 10;
-	position: fixed;
+	
 	display: none;
-	top: 0px;
-	left: 0px;
+
 	text-align: center; 
-	width: 100%;
-	height: 100%; 
-	height: 100vh; 
+
 	background-color: rgba(0,0,0,.35);
 }
-#cyptoguard:before {              /* 利用css实现元素居中，兼容至ie8，若有需要可以使用js文件中的注释代码*/
-	content: '';
-    display: inline-block;    
-    height: 100%;
-    vertical-align: middle;
-}
+
 .passwordProtect {
 	z-index: 100;
 	position: relative;
