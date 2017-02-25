@@ -53,6 +53,12 @@ function ajax (meath, url, ascyn, data, fn) {
 		xhr.setRequertHeader("Content-Type", "application/x-www-form-urlencoded");
 	}
 
+	// 在ie8以上可以设置其超时时间
+/*	xhr.timeout = 1000; 
+	xhr.ontimeout = function () {
+		alert("请求超时"); 
+	}*/
+
 	// 第二步，可以发送数据
 	xhr.send(data);
 
